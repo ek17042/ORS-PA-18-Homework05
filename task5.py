@@ -13,3 +13,17 @@
 * Use main() function to test your solution.
 ===================================================
 """
+def averageval(list):
+    sumofelements = 0
+
+    for i in list:
+        sumofelements += i
+    average = sumofelements / len(list)
+    return average
+
+
+def main():
+    averagevalue = averageval([1,6,8,10,124,14,106,18])
+    print("The average value of the list elements is:",averagevalue)
+
+main()
