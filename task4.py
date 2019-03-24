@@ -13,3 +13,21 @@
 * Use main() function to test your solution.
 ===================================================
 """
+try:
+    number = int(input("Enter the number: "))
+    initialproduct = 1
+    while number > 0:
+        initialproduct *= number % 10
+        number = number // 10
+except ValueError:
+    print("This program doesn't support the value you entered. Please try again :)")
+
+
+def main():
+
+    product = initialproduct
+    print("The wanted product is: ", product)
+
+main()
+
+#When the input value is negative, the program gives wrong result
