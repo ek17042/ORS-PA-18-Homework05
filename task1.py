@@ -15,3 +15,20 @@
 * Use main() function to test your solution.
 ===================================================
 """
+def numpower(num,exp):
+    if (exp == 0):
+        return (1)
+    if (exp == 1):
+        return (num)
+    if (exp != 1):
+        return (num * numpower(num, exp - 1))
+
+def main():
+
+    x = (int(input("Enter the number: ")))
+    y = (int(input("Enter the exponent: ")))
+    print("The wanted result is:",numpower(x, y))
+
+
+main()
+#This program doesn't work for negative value of exponent
